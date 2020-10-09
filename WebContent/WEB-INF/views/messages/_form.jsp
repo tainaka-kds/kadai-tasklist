@@ -3,7 +3,7 @@
 
 <label for="content">内容</label>
 <br />
-<input type="text" name="content" value="${message.content}" />
+<input type="text" name="content" value="${task.content}" />
 <br />
 <br />
 
