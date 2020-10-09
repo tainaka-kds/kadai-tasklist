@@ -6,13 +6,10 @@
 		<h2>タスク一覧</h2>
 		<ul>
 			<c:forEach var="task" items="${tasks}">
-				<li>
-					<a href="${pageContext.request.contextPath}/show?id=${task.id}">
-						<c:out value="${task.id}" />
-					</a><br>
-					　&gt;登録日時：<c:out value="${task.input_date}"></c:out> <br>
-					　&gt;更新日時：<c:out value="${task.update_date}"></c:out><br>
-					　&gt;<c:out value="${task.content}" /></li>
+				<li><a
+					href="${pageContext.request.contextPath}/show?id=${task.id}"> <c:out
+							value="${task.id}" />
+				</a> &gt; <c:out value="${task.content}" /></li>
 			</c:forEach>
 		</ul>
 
