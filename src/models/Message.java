@@ -1,4 +1,4 @@
-package mdoels;
+package models;
 
 import java.sql.Timestamp;
 
@@ -27,8 +27,8 @@ public class Message {
 	@Column(name = "input_date", nullable = false)
 	private Timestamp input_date;
 
-	@Column(name = "output_date", nullable = false)
-	private Timestamp output_date;
+	@Column(name = "update_date", nullable = false)
+	private Timestamp update_date;
 
 	@Column(name = "content", length = 255, nullable = false)
 	private String content;
@@ -49,12 +49,12 @@ public class Message {
 		this.input_date = input_date;
 	}
 
-	public Timestamp getOutput_date() {
-		return output_date;
+	public Timestamp getUpdate_date() {
+		return update_date;
 	}
 
-	public void setOutput_date(Timestamp output_date) {
-		this.output_date = output_date;
+	public void setUpdate_date(Timestamp output_date) {
+		this.update_date = output_date;
 	}
 
 	public String getContent() {
